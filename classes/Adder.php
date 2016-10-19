@@ -3,7 +3,7 @@
 /**
  * Adder class
  */
-class Adder {
+class Adder implements OperatorInterface {
    
     /**
      * Running Calculation
