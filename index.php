@@ -1,5 +1,6 @@
 <?php
 
+// Init
 require_once 'init.php';
 
 
