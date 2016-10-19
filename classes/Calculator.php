@@ -24,7 +24,27 @@ class Calculator {
      * Settin Operation Method
      * @param string $operation
      */
-    public function setOperation($operation) {
+    public function setOperation(OperatorInterface $operation) {
         $this->operation = $operation;
+        
+    }
+    
+    
+    /**
+     * Calculate method
+     */
+    public function calculate() {
+        foreach( func_get_args() as $number){
+            $this->result = $this->operation->run($number, $this->result);
+        }
+    }
+    
+    
+    /**
+     * Getttin Result
+     * @return int
+     */
+    public function getResult() {
+        return $this->result;
     }
 }
