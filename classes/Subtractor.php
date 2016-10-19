@@ -4,7 +4,7 @@
 /**
  * Subtractor class of Calculations
  */
-class Subtractor {
+class Subtractor implements OperatorInterface {
     
     /**
      * Running Subtractor method
