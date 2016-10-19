@@ -1,13 +1,7 @@
 <?php
 
-require_once 'classes/Calculator.php';
+require_once 'init.php';
 
-require_once 'classes/OperatorInterface.php';
-
-require_once 'classes/Adder.php';
-require_once 'classes/Subtractor.php';
-require_once 'classes/Multiplier.php';
-require_once 'classes/Divider.php';
 
 $c = new Calculator;
 
